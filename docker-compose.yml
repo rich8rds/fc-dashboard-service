@@ -1,6 +1,6 @@
 services:
   dashboard-service:
-    image: ${ECR_REPOSITORY}/fc-dashboard-service:latest
+    build: ./
     container_name: dashboard-service
     ports:
       - "4083:4083"
